@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm i && npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/aamay022/node-api4-project#readme",
   "devDependencies": {
-    "eslint": "^8.3.0",
+    "eslint": "^7.11.0",
     "eslint-plugin-react": "^7.27.1",
     "nodemon": "^2.0.15"
   },
