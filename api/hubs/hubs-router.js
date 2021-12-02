@@ -1,8 +1,5 @@
 const express = require('express');
 const {
-  sayHi,
-  greetCohort,
-  maybeShortCircuit,
   errorHandling,
   checkId,
   checkHubPayload,
@@ -11,9 +8,6 @@ const Hubs = require('./hubs-model.js');
 const Messages = require('../messages/messages-model.js');
 
 const router = express.Router();
-
-router.use(sayHi); // plugging the middl. Order matters!
-router.use(greetCohort);
 
 router.get('/', (req,res) => {
   res.json([
