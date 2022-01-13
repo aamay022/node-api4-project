@@ -30,7 +30,7 @@ const find = () => {
 module.exports = {
     find,
     async create({name, password, role}) {
-        const newUser = { id: getId(), name, password, role}
+        const newUser = { id: 3, name, password, role}
         users.push(newUser)
         return newUser
     }
